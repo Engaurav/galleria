@@ -1,0 +1,9 @@
+.SubCategory{
+    background: #efcfa4;
+    position: fixed;
+    color: blueviolet;
+    top: 85px;
+    width: 157px;
+    left: 131px;
+    height: calc(100% - 85px);
+}
