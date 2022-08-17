@@ -1,0 +1,61 @@
+.Navbar {
+  display: flex;
+  position: fixed;
+  color: white;
+  background: #fc873a;
+  width: 100%;
+  top: 0;
+  height: 86px;
+}
+
+.BrandImage img {
+  width: 225px;
+}
+
+.SearchBar {
+  /* background: darkblue; */
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SearchBar input {
+  height: 32px;
+  width: 240px;
+  border-radius: 9px;
+}
+
+.NavCartContainer {
+  /* background: darkblue; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: auto;
+}
+
+.NavCart {
+  background: white;
+  border-radius: 17px;
+  padding: 8px 16px;
+  width: 165px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 18px;
+  position: relative;
+}
+.NavCart img {
+  width: 35px;
+  cursor: pointer;
+}
+
+.NavCartTotal {
+  background: darkblue;
+  padding: 2px 5px 6px 4px;
+  position: absolute;
+  right: 5px;
+  top: 4px;
+  border-radius: 50%;
+  height: 14px;
+  text-align: center;
+  width: 12px;
+}
