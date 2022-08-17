@@ -1,0 +1,66 @@
+.Sidebar{
+    width: 100px;
+    background: #fd7c28;
+    transition: ease-in-out 0.3s;
+}
+.Sidebar:hover{
+    width: 150px;
+}
+.SidebarTitle{
+    padding: 5px;
+    text-align: center;
+    margin: 0 3px;
+}
+.SidebarTitle img{
+    width: 35px;
+    transition: ease-in-out 0.3s;
+}
+.SidebarTitle span{
+    display: none;
+    color: #fd7c28;
+}
+
+.SidebarCat{
+    background: antiquewhite;
+    margin: 7px 7px;
+    color: saddlebrown;
+    padding: 11px;
+    border-radius: 6px;
+    text-align: -webkit-center;
+    cursor: pointer;
+    height: 39px;
+    transition: ease-in-out 0.3s;
+}
+.SidebarCat:hover{
+    margin: 7px 0px;
+    border-radius: 0;
+    background: #efcfa4;
+}
+
+.SidebarCatImage img{
+    width: 35px;
+    transition: ease-in-out 0.3s;
+}
+.SidebarCat:hover > .SidebarCatImage img{
+    transform: scale(1.09);
+}
+.SidebarCatTitle{
+    height: 0;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.Sidebar:hover  .SidebarCatTitle{
+    height: 20px;
+}
+.Sidebar:hover  .SidebarCat {
+    height: 50px;
+}
+.Sidebar:hover .SidebarTitle img{
+    width: 35px;
+    transition: ease-in-out 0.3s;
+}
+.Sidebar:hover .SidebarTitle span{
+    display: inline;
+    color: #fd7c28;
+}

@@ -5,5 +5,10 @@ body{
   text-align: center;
 }
 .Main{
-  margin-top: 86px;
+  margin-top: 85px;
+  display: flex;
+  position: fixed;
+  background: #fd7c28;
+  width: 100%;
+  height: calc(100% - 86px);
 }

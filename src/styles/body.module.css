@@ -1,0 +1,5 @@
+.Body{
+    width: -webkit-fill-available;
+    background: seagreen;
+    /* border-radius: 5px; */
+}
