@@ -1,5 +1,17 @@
 .Body{
     width: -webkit-fill-available;
-    background: seagreen;
+    background: #eeee;
+    overflow: auto;
     /* border-radius: 5px; */
+}
+
+
+.Title{
+    color: #000081;
+    margin-left: 20px;
+}
+
+.Items{
+    display: flex;
+    flex-wrap: wrap;
 }

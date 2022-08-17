@@ -1,0 +1,53 @@
+.Items{
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px;
+    transition: ease-in-out 0.3s;
+    overflow: hidden;
+}
+
+.Items:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+.ItemImage img{
+    width: 200px;
+}
+
+.ItemBrand{
+    color: black;
+    font-size: x-large;
+    text-align: center;
+}
+
+.ItemDetail{
+    color: darkslategray;
+    font-size: small;
+    padding: 5px;
+}
+.ItemPrice{
+    padding: 5px;
+    font-size: large;
+    margin-top: -5px;
+}
+.ItemPrice span{
+    color: saddlebrown;    
+}
+
+.ItemToCart{
+    background: #fd7c28;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: aliceblue;
+    padding-top: 10px;
+    font-size: larger;
+}
+
+.ItemToCart:hover{
+    background: #000081;
+}

@@ -6,6 +6,7 @@ function SubCategory(props) {
   const [subCategory,setSubCategory] = useState([]);
   const [showfurtherCategory,setShowfurtherCategory] = useState(false);
   const [furtherCategory,setFurtherCategory] = useState([]);
+  const [ classId, setClassId] = useState(0);
 
   const data = props.data;
 
@@ -20,10 +21,16 @@ function SubCategory(props) {
 
   const handleFurtherSubCategory =async (sub_id)=> {
     await setShowfurtherCategory(false)
-    console.log(subCategory[sub_id])
+    // console.log(subCategory[sub_id])
+    let furtherCatClass = document.getElementsByClassName('subcategory_SubCategoryItem__spUes');
     
+    furtherCatClass[classId].style.background =await '#efcfa4';
+   
 
     if(subCategory[sub_id].further_category){
+        furtherCatClass[classId].style.background =await '#efcfa4';
+        furtherCatClass[sub_id].style.background = 'antiquewhite';
+        await setClassId(sub_id);
         await setFurtherCategory(subCategory[sub_id].further_category)
         await setShowfurtherCategory(true)
     }
