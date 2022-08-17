@@ -1,17 +1,17 @@
-.SubCategory{
-    background: #efcfa4;
+.FurtherCategory{
+    background: antiquewhite;
     position: fixed;
     color: #2d1671;
     top: 85px;
     display: flex;
     flex-direction: column;
     width: 157px;
-    left: 150px;
+    left: 302px;
     height: calc(100% - 85px);
+    z-index: 10;
 }
 
-
-.SubCategoryItem h2{
+.FurtherCategoryItem h2{
     /* background: antiquewhite; */
     text-align: center;
     margin: 2px 0;
@@ -19,11 +19,9 @@
     color: saddlebrown;
     cursor: pointer;
     font-size: smaller;
-
-    /* height: 20px; */
 }
 
-.SubCategoryItem h2:hover{
-    background: antiquewhite;
+.FurtherCategoryItem h2:hover{
+    background: #efcfa4;
     color:#2d1671 ;
 }

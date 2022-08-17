@@ -1,10 +1,11 @@
 .Sidebar{
-    width: 100px;
+    min-width: 100px;
     background: #fd7c28;
     transition: ease-in-out 0.3s;
+    position: relative;
 }
 .Sidebar:hover{
-    width: 150px;
+    min-width: 150px;
 }
 .SidebarTitle{
     padding: 5px;
