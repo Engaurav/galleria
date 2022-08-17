@@ -1,20 +1,22 @@
 import React from 'react';
 import style from '../../styles/items.module.css'
 
-function Items() {
+function Items(props) {
+  const item = props.data;
+  console.log(item)
   return (
     <div className={style.Items}>
       <div className={style.ItemImage}>
-        <img src='https://rukminim1.flixcart.com/image/880/1056/xif0q/t-shirt/9/4/j/m-hk9160-adidas-original-imagh3zf5ehpzchg.jpeg'  alt='items'/>
+        <img src={item.img}  alt='items'/>
       </div>
       <div className={style.ItemBrand}>
-        Adidas
+        {item.brand}
       </div>
       <div className={style.ItemDetail}>
-         Printed Men Round Neck White T-Shirt
+         {item.detail}
       </div>
       <div className={style.ItemPrice}>
-        <span>Price</span> ₹1399
+        <span>Price</span> ₹{item.price}
       </div>
       <div className={style.ItemToCart}>
         Add To Cart

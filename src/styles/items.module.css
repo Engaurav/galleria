@@ -16,6 +16,7 @@
 
 .ItemImage img{
     width: 200px;
+    height: 225px;
 }
 
 .ItemBrand{
@@ -28,6 +29,7 @@
     color: darkslategray;
     font-size: small;
     padding: 5px;
+    height: 31px;
 }
 .ItemPrice{
     padding: 5px;
