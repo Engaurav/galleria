@@ -23,7 +23,7 @@ function SubCategory(props) {
   const handleFurtherSubCategory =async (sub_id)=> {
     await setShowfurtherCategory(false)
     // console.log(subCategory[sub_id])
-    let furtherCatClass = document.getElementsByClassName('subcategory_SubCategoryItem__spUes'); 
+    let furtherCatClass = document.getElementsByClassName(style.SubCategoryItem); 
     furtherCatClass[classId].style.background =await '#efcfa4'; 
     if(subCategory[sub_id].further_category){
         furtherCatClass[classId].style.background =await '#efcfa4';

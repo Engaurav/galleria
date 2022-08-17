@@ -149,9 +149,8 @@ function Sidebar() {
   const handleSubCategory =async (id)=> {
     await setShowSubCategory(false);
     // console.log(category[id]);
-    let subcatclass = document.getElementsByClassName('sidebar_SidebarCat__gyveP');
-
-    subcatclass[classId].style.margin =await '7px 7px';
+    let subcatclass = document.getElementsByClassName(style.SidebarCat);
+    subcatclass[classId].style.margin = await '7px 7px';
     subcatclass[classId].style.borderRadius =await '6px';
     subcatclass[classId].style.background =await 'antiquewhite';
 
@@ -168,7 +167,7 @@ function Sidebar() {
 
   const handleHideSubCategories =async () =>{
     await setShowSubCategory(false);
-    let subcatclass = document.getElementsByClassName('sidebar_SidebarCat__gyveP');
+    let subcatclass = document.getElementsByClassName(style.SidebarCat);
     subcatclass[classId].style.margin =await '7px 7px';
     subcatclass[classId].style.borderRadius =await '6px';
     subcatclass[classId].style.background =await 'antiquewhite';
@@ -187,6 +186,7 @@ function Sidebar() {
         return <Category data={val} key={key} handleSubCategory = {handleSubCategory}/>
       })}
       {showSubCategory ?  <SubCategory data = {subCategory}/> : '' }
+      {/* <SubCategory/> */}
     </div>
   )
 }
