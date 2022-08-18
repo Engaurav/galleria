@@ -62,7 +62,7 @@ function CartItem(props) {
             <div className={style.CartImage}>
                 <img src={item.img} alt='cartimg'/>
             </div>
-            <div className={style.CartItemitem}>
+            <div className={style.CartItemData}>
                 <div className={style.CartItemBrand}>{item.brand}</div>
                 <div className={style.CartItemDetail}>{item.detail}</div>
                 <div className={style.CartItemPrice}><span>Price</span> ₹{item.price}</div>
