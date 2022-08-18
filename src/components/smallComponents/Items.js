@@ -22,6 +22,11 @@ function Items(props) {
     }else{
       products[item.id].subcategory[item.sub_id].items[item.i_id].qty = 1;
     }
+    let total = shop.totalCartItem + 1;
+    shop.setTotalCartItem(total);
+    shop.setTotalCartPrice(shop.totalCartPrice+item.price);
+
+
     shop.setAllProducts(products);
     shop.setCartItems([...shop.cartItems,item]);
   }

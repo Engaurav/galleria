@@ -13,6 +13,8 @@ export const useProvideShop = () => {
   const [allProducts,setAllProducts] = useState([]);
   const [currentTitle,setCurrentTitle] = useState('');
   const [showCart, setShowCart] = useState(false);
+  const [totalCartItem, setTotalCartItem] = useState(0);
+  const [totalCartPrice, setTotalCartPrice] = useState(0);
   
 
   useEffect(() => {
@@ -29,6 +31,11 @@ export const useProvideShop = () => {
     currentTitle,
     setCurrentTitle,
     showCart,
-    setShowCart
+    setShowCart,
+    totalCartItem,
+    setTotalCartItem,
+    totalCartPrice,
+    setTotalCartPrice,
+
   };
 };

@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, {  useEffect, useState } from "react";
 import style from "../styles/navbar.module.css";
 import brand from "../assets/images/brand.jpeg";
 import { useShop } from "../hooks";
@@ -6,6 +6,9 @@ import { useShop } from "../hooks";
 function Navbar() {
   const [total,setTotal] = useState(0);
   const shop = useShop();
+  useEffect(()=>{
+    setTotal(shop.totalCartItem)
+  },[shop])
   
   return (
     <div className={style.Navbar}>

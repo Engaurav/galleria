@@ -14,11 +14,11 @@ function Cart() {
       </div><hr/>
       <div className={style.CartItems}>
         { shop.cartItems.length!==0 && shop.cartItems.map((value,key)=>{
-          return <CartItem data={value} key={key}/> })}
+          return <CartItem data={value} id={key} key={key}/> })}
       </div>
       <div className={style.CartTotal}>
-        <span><font color="saddlebrown">Total Quantity</font> 1</span>
-        <span><font color="saddlebrown">Total Price</font> ₹1999</span>
+        <span><font color="saddlebrown">Total Quantity</font> {shop.totalCartItem}</span>
+        <span><font color="saddlebrown">Total Price</font> ₹{shop.totalCartPrice}</span>
       </div>
       <div className={style.CartPayment}>
         <button>Cehckout</button>
