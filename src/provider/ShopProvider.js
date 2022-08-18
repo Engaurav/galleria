@@ -5,7 +5,8 @@ const initialState = {
   currentItems: [],
   cartItems : [],
   allProducts : [],
-  currentTitle : ''
+  currentTitle : '',
+  showCart : false
 };
 
 export const ShopContext = createContext(initialState);
