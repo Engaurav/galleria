@@ -148,7 +148,6 @@ function Sidebar() {
   }]
   const handleSubCategory =async (id)=> {
     await setShowSubCategory(false);
-    // console.log(category[id]);
     let subcatclass = document.getElementsByClassName(style.SidebarCat);
     subcatclass[classId].style.margin = await '7px 7px';
     subcatclass[classId].style.borderRadius =await '6px';
