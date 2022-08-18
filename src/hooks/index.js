@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import {products} from "../assets/json_data/products";
 import { ShopContext } from "../provider/ShopProvider";
 
 
@@ -14,7 +15,7 @@ export const useProvideShop = () => {
   
 
   useEffect(() => {
-    
+    setAllProducts(products)
   }, []);
 
   return {
