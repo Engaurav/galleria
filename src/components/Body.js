@@ -7,7 +7,7 @@ function Body() {
   const [items,setItems] = useState([]);
   const [title,setTitle] = useState('');
   const shop  = useShop();
-  console.log(shop)
+  // console.log(shop)
   useEffect(()=>{
     setItems(shop.currentItems);
     setTitle(shop.currentTitle);

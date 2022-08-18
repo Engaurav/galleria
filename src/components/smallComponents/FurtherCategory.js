@@ -13,7 +13,7 @@ function FurtherCategory(props) {
 
   const handleShowItems =async (items,title) => {
     shop.setCurrentTitle(title);
-    console.log(items)
+    // console.log(items)
     if(items){
       shop.setCurrentItems(items);
     }else{

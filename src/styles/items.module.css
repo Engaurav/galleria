@@ -49,6 +49,15 @@
     padding-top: 10px;
     font-size: larger;
 }
+.ItemGoToCart{
+    background: #000081;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: aliceblue;
+    padding-top: 10px;
+    font-size: larger;
+}
 
 .ItemToCart:hover{
     background: #000081;
