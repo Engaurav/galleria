@@ -5,17 +5,21 @@ import FurtherCategory from './FurtherCategory';
 
 function SubCategory(props) {
   const [subCategory,setSubCategory] = useState([]);
+  const [subCategory1,setSubCategory1] = useState([]);
+
   const [showfurtherCategory,setShowfurtherCategory] = useState(false);
   const [furtherCategory,setFurtherCategory] = useState([]);
   const [ classId, setClassId] = useState(0);
+  const [search,setSearch] = useState();
   const shop = useShop();
   const data = props.data;
 
   useEffect(()=>{
     if(data.subcategory){
         setSubCategory(data.subcategory);
+        setSubCategory1(data.subcategory);
     }else{
-        setSubCategory([]);
+        setSubCategory1([]);
     }
 
   },[data.subcategory,data.title])
@@ -45,9 +49,17 @@ function SubCategory(props) {
     }
   }
 
+  const handleSearch = (e) =>{
+    let subData = subCategory1.filter((value,key)=>{
+      return value.sub_title.includes(e.target.value);
+    })
+    setSubCategory(subData);
+  }
+
+
   return (
     <div className={style.SubCategory} >
-      {/* <h2>  {data.title}</h2> */}
+      <div><input type='search' style={{width:'155px',margin:'0 1px'}} onKeyUp={(e)=>{handleSearch(e)}} placeholder='Search Category'/></div>
       { subCategory.length > 0 ? subCategory.map((value,key)=>{
         return (
             <div key={key} className={style.SubCategoryItem} onMouseEnter={()=>{handleFurtherSubCategory(value.sub_id)}} onClick={()=>{handleShowItems(value.items,value.sub_title)}}><h2>{value.sub_title}</h2></div>
