@@ -20,6 +20,7 @@ function SubCategory(props) {
         setSubCategory1(data.subcategory);
     }else{
         setSubCategory1([]);
+        setSubCategory([]);
     }
 
   },[data.subcategory,data.title])
